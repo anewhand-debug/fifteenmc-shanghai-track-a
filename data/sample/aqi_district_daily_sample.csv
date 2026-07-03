@@ -1,0 +1,4 @@
+date,district_name,aqi,pm25,source,note
+2026-06-01,Huangpu,68,38,sample,Sample only for interface testing; not used in official scoring unless replaced.
+2026-06-01,Jing'an,72,41,sample,Sample only for interface testing; not used in official scoring unless replaced.
+2026-06-01,Pudong New Area,63,34,sample,Sample only for interface testing; not used in official scoring unless replaced.

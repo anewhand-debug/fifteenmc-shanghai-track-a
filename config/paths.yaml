@@ -1,0 +1,69 @@
+project_root: D:/fifteenmcproject/15mc-shanghai-track-a
+raw_data_root_env: FIFTEENMC_RAW_DATA_ROOT
+default_raw_data_root: D:/fifteenmcproject
+
+directories:
+  cache: data/cache
+  processed: data/processed
+  web: data/web
+  sample: data/sample
+  app_public_data: app/public/data
+
+analysis:
+  metric_crs: EPSG:32651
+  web_crs: EPSG:4326
+  grid_size_m: 500
+  h3_resolution: 8
+  default_collection_date: "2026-06-12"
+  max_isochrone_origins_env: FIFTEENMC_GRID_LIMIT
+  max_poi_records_env: FIFTEENMC_POI_LIMIT
+
+raw_paths:
+  shanghai_boundary: sh-province-district.geojson
+  shanghai_towns: sh-towns.geojson
+  shanghai_villages: sh-villages.geojson
+  roads_simplified: shanghai-roads-simplified.parquet
+  green_polygons: shanghai-full-green.parquet
+  water_polygons: shanghai-full-water.parquet
+  buildings: shanghai-full-buildings.parquet
+  sports_poi: 01-SHP/01-SHP/2021.08/上海市-体育健身服务.shp
+  food_poi: 01-SHP/01-SHP/2021.08/上海市_餐饮.shp
+  shopping_poi: 01-SHP/01-SHP/2021.08/上海市_购物.shp
+  healthcare_poi: 01-SHP/01-SHP/2021.08/上海市_医疗服务.shp
+  education_poi: 01-SHP/01-SHP/2021.08/上海市_科研教育.shp
+  daily_finance_poi: 01-SHP/01-SHP/2021.08/上海市_金融服务.shp
+  daily_other_poi: 01-SHP/01-SHP/2021.08/上海市_其他设施.shp
+  park_poi: 01-SHP/01-SHP/2021.08/上海市_公园.shp
+  park_polygons: 01-SHP/01-SHP/2021.08/上海市_公园面.shp
+  sports_field_polygons: 01-SHP/01-SHP/2021.08/上海市_体育场区域.shp
+  sports_center_polygons: 01-SHP/01-SHP/2021.08/上海市_体育中心区域.shp
+  swimming_pool_polygons: 01-SHP/01-SHP/2021.08/上海市_游泳池区域.shp
+  running_track_polygons: 01-SHP/01-SHP/2021.08/上海市_运动场跑道.shp
+  metro_stations: 04-traffic/04-交通数据/地铁数据/上海市_地铁站.shp
+  metro_exits: 04-traffic/04-交通数据/地铁数据/上海市_地铁出入口.shp
+  metro_lines: 04-traffic/04-交通数据/地铁数据/上海市_地铁线-开源.shp
+  bus_stops: 04-traffic/04-交通数据/公交车站/上海_公交站点.shp
+  bus_lines: 04-traffic/04-交通数据/公交车站/上海_公交线路.shp
+  aoi_polygons: 08-AOI/08-AOI/AOI-baiduapi/SHP/上海市_AOI面.shp
+  aoi_attributes: 08-AOI/08-AOI/AOI-baiduapi/Excel/AOI属性表-3857.txt.csv
+  landuse: 08-AOI/08-AOI/landuse-webmap/上海市_Landuse.shp
+  esa_landuse_tif: 09-landuse/09-开源土地利用/开源土地利用/ESA/TIF/上海_土地利用数据_10m分辨率_ESA数据.tif
+  house_price_points: 13-other/13-其它/06-房价数据/上海市-房价_WGS84.shp
+  house_price_csv: 13-other/13-其它/06-房价数据/上海市-房价数据.csv
+  anjuke_pickle: utseus-anjuke-real-estate.pk
+  mobike_csv: UTSEUS-MOBIKE-shanghai_full.csv
+  satisfaction_csv: UTSEUS-CENDUS-Satisfaction.csv
+  aqi_notes: 13-other/13-其它/02-空气质量/空气质量.txt
+
+outputs:
+  data_catalog: data/processed/data_catalog.csv
+  boundary: data/processed/shanghai_boundary.parquet
+  grid_500m: data/processed/grid_500m.parquet
+  amenities: data/processed/amenities_normalized.parquet
+  transit: data/processed/transit_normalized.parquet
+  roads: data/processed/roads_normalized.parquet
+  grid_accessibility: data/processed/grid_accessibility.parquet
+  grid_scores: data/processed/grid_scores.parquet
+  h3_scores: data/processed/h3_scores_track_a.parquet
+  h3_geojson: data/web/h3_scores_track_a.geojson
+  app_h3_geojson: app/public/data/h3_scores_track_a.geojson

@@ -1,0 +1,18 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "poi_id": "sample_gym_1",
+        "name": "Sample Fitness Studio",
+        "category_raw": "gym",
+        "category_group": "gym_fitness",
+        "source": "sample",
+        "collection_date": "2026-06-12",
+        "note": "Sample only for tests when local POI data is unavailable."
+      },
+      "geometry": { "type": "Point", "coordinates": [121.47, 31.23] }
+    }
+  ]
+}

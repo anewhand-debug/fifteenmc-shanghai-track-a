@@ -1,0 +1,30 @@
+.env
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Large local data and generated caches
+data/cache/*
+data/processed/*
+data/web/*
+app/public/data/*.geojson
+app/.npm-cache/
+
+!data/cache/.gitkeep
+!data/processed/.gitkeep
+!data/web/.gitkeep
+!data/web/h3_scores_track_a.geojson
+!app/public/data/h3_scores_track_a.geojson
+!data/sample/*
+
+# Frontend build artifacts
+app/node_modules/
+app/dist/
+
+# Notebook execution scratch
+*.log
+*.tmp

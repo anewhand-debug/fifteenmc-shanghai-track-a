@@ -1,0 +1,108 @@
+baseline_categories:
+  food:
+    keywords:
+      - market
+      - grocery
+      - supermarket
+      - fresh
+      - 菜场
+      - 生鲜
+      - 超市
+      - 食品
+  healthcare:
+    keywords:
+      - hospital
+      - clinic
+      - pharmacy
+      - health
+      - 医院
+      - 卫生
+      - 药
+      - 诊所
+  education:
+    keywords:
+      - school
+      - kindergarten
+      - education
+      - 学校
+      - 幼儿园
+      - 教育
+  transit:
+    keywords:
+      - metro
+      - bus
+      - subway
+      - 地铁
+      - 公交
+  parks:
+    keywords:
+      - park
+      - green
+      - garden
+      - 公园
+      - 绿地
+      - 花园
+  daily_services:
+    keywords:
+      - bank
+      - post
+      - community
+      - convenience
+      - 银行
+      - 邮政
+      - 社区
+      - 便利
+
+track_a_categories:
+  gym_fitness:
+    keywords:
+      - gym
+      - fitness
+      - 健身
+      - 健身房
+      - 健身中心
+  public_park_exercise:
+    keywords:
+      - park
+      - exercise
+      - 公园
+      - 健身器材
+      - 户外健身
+  sports_fields_courts:
+    keywords:
+      - sports field
+      - basketball
+      - football
+      - tennis
+      - stadium
+      - court
+      - 运动场
+      - 篮球
+      - 足球
+      - 网球
+      - 体育场
+      - 球场
+  swimming_pool_public:
+    keywords:
+      - swimming
+      - natatorium
+      - 游泳
+      - 游泳馆
+  yoga_martial_dance:
+    keywords:
+      - yoga
+      - martial
+      - dance
+      - 瑜伽
+      - 武术
+      - 舞蹈
+  fresh_market_health_food:
+    keywords:
+      - fresh
+      - market
+      - health food
+      - organic
+      - 生鲜
+      - 菜场
+      - 有机
+      - 健康食品

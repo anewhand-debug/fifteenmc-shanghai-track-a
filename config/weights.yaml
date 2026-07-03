@@ -1,0 +1,56 @@
+baseline:
+  food: 0.18
+  healthcare: 0.18
+  education: 0.16
+  transit: 0.18
+  parks: 0.15
+  daily_services: 0.15
+
+track_a:
+  gym_fitness: 0.20
+  public_park_exercise: 0.18
+  sports_fields_courts: 0.18
+  swimming_pool_public: 0.10
+  yoga_martial_dance: 0.10
+  cycle_lane_length: 0.12
+  fresh_market_health_food: 0.07
+  greenery_index: 0.04
+  air_quality: 0.01
+
+composite:
+  baseline: 0.50
+  track_a: 0.50
+
+targets:
+  food_count: 3
+  healthcare_count: 2
+  education_count: 2
+  transit_count: 4
+  parks_area_m2: 10000
+  daily_services_count: 5
+  gym_fitness_count: 3
+  public_park_exercise_count: 1
+  sports_fields_courts_count: 2
+  swimming_pool_public_count: 1
+  yoga_martial_dance_count: 2
+  cycle_lane_length_km: 4
+  fresh_market_health_food_count: 3
+  greenery_index: 0.35
+
+modes:
+  walk:
+    minutes: 15
+    speed_kmh: 4.8
+    baseline_eligible: true
+  bike:
+    minutes: 15
+    speed_kmh: 14.0
+    baseline_eligible: true
+  transit:
+    minutes: 15
+    speed_kmh: 18.0
+    baseline_eligible: false
+  car:
+    minutes: 15
+    speed_kmh: 28.0
+    baseline_eligible: false
